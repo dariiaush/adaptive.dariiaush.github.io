@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Новая новость</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="size">
+                <a href="./index.html" class="logo">Блог Пользователя</a>
+                <ul class="navigation">
+                        <li class="nav_item"><a href="./add_newuser.html">Пользователи</a></li>
+                        <li class="nav_item active_page"><a href="#">Новости</a></li>
+                        <li class="nav_item"><a href="#">Настройки сайта</a></li>
+                </ul>
+                <div class="menu_mobile" onclick="document.getElementById('menumobile').style.display = 'block'">
+                </div>
+                <div class="menu_mobile_link" id="menumobile">
+                    <a href="./add_newuser.html">Пользователи</a>
+                    <a href="#" class="active_page">Новости</a>
+                    <a href="#">Настройки сайта</a>
+                    <a href="#" onclick="document.getElementById('menumobile').style.display = 'none'">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="size">
+                <div class="new_news">
+                    <h2>Новая новость</h2>
+                    <form action="">
+                        <div class="newsname">
+                            <input type="text" name="news_name" id="news_name" placeholder="Название" autocomplete="off">
+                            <input type="text" name="news_name_eng" id="news_name_eng" placeholder="Название на английском" autocomplete="off">
+                        </div>
+                        <textarea name="news_annotation" id="news_annotation" cols="30" rows="5" placeholder="Краткая новость" spellcheck="true"></textarea>
+                        <textarea name="news_full" id="news_full" cols="30" rows="10" placeholder="Полная новость"></textarea>
+                        <div class="news_footer">
+                            <input type="date" name="news_date" id="news_date" placeholder="Дата публикации">
+                            <input type="text" name="news_author" id="news_author" placeholder="Автор">
+                        </div>
+                        <input type="submit" value="Отправить" class="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="size">
+                <p>2020 Все права защищены</p>
+                <p>Разработчик: Ушарова Дарья</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

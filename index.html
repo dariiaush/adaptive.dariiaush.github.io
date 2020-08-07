@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Блог пользователя</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="size">
+                <a href="./index.html" class="logo">Блог Пользователя</a>
+                <ul class="navigation">
+                        <li class="nav_item active_page"><a href="./index.html">Главная</a></li>
+                        <li class="nav_item"><a href="./article.html">Статьи</a></li>
+                        <li class="nav_item"><a href="./news.html">Новости</a></li>
+                        <li class="nav_item"><a href="#">Обо мне</a></li>
+                </ul>
+                <div class="menu_mobile"  onclick="document.getElementById('menumobile').style.display = 'block'">
+                </div>
+                <div class="menu_mobile_link" id="menumobile">
+                    <a href="./index.html" class="active_page">Главная</a>
+                    <a href="./article.html">Статьи</a>
+                    <a href="./news.html">Новости</a>
+                    <a href="#">Обо мне</a>
+                    <a href="./authorization.html">Авторизация и Регистрация</a>
+                    <a href="#" onclick="document.getElementById('menumobile').style.display = 'none'">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="size">
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="text" id="text" placeholder="Введите текст...">
+                        <input type="submit" value="Искать" class="send">
+                    </form>
+                </div>
+                <div class="authorization"><a href="./authorization.html">Авторизация и Регистрация</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="size">
+                <div class="column">
+                    <div class="news">
+                        <div class="head">
+                            <a href="#">Статья 1</a>
+                            <p>1 февраля 2018</p>
+                        </div>
+                        <p>Created multiply have divided In isn't. Let day god, it one likeness gathering made likeness a them air be kind the. Evening set wherein created saying fruit forth herb us which winged seed. Them upon living she'd.
+                            <br>
+                            <br>
+                            Bearing his years creeping deep shall appear and, isn't second bearing a. One him good. Cattle seed moveth divide him herb form beginning don't bearing god deep green. Form abundantly you're i, image lights light darkness spirit image sea winged brought Signs male.
+                        </p>
+                        <div class="foot">
+                            <div class="foot-count">
+                                <span>Просмотры: 300</span>
+                                <span>Лайки: 100</span>
+                            </div>
+                            <button type="submit" class="read">Читать</button>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <img src="./static/img/pic.png" alt="picture">
+                    </div>
+                    <div class="news">
+                        <div class="head">
+                            <a href="#">Статья 1</a>
+                            <p>1 февраля 2018</p>
+                        </div>
+                        <p>Created multiply have divided In isn't. Let day god, it one likeness gathering made likeness a them air be kind the. Evening set wherein created saying fruit forth herb us which winged seed. Them upon living she'd.
+                            <br>
+                            <br>
+                            Bearing his years creeping deep shall appear and, isn't second bearing a. One him good. Cattle seed moveth divide him herb form beginning don't bearing god deep green. Form abundantly you're i, image lights light darkness spirit image sea winged brought Signs male.
+                        </p>
+                        <div class="foot">
+                            <div class="foot-count">
+                                <span>Просмотры: 300</span>
+                                <span>Лайки: 100</span>
+                            </div>
+                            <button type="submit" class="read">Читать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="section">
+                        <h2>Разделы</h2>
+                        <ul class="sections">
+                            <li>Статьи
+                                <ul class="items">
+                                    <li><a href="#">Статья 1</a></li>
+                                    <li><a href="#">Статья 2</a></li>
+                                    <li><a href="#">Статья 3</a></li>
+                                    <li><a href="#">Статья 4</a></li>
+                                    <li><a href="#">Статья 5</a>
+                                        <ul class="items2">
+                                            <li><a href="#">Статья 5.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Новости
+                                <ul class="items">
+                                    <li><a href="#">Новость 1</a></li>
+                                    <li><a href="#">Новость 2</a></li>
+                                    <li><a href="#">Новость 3</a>
+                                        <ul class="items2">
+                                            <li><a href="#">Новость 3.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="size">
+                <p>2020 Все права защищены</p>
+                <p>Разработчик: Ушарова Дарья</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

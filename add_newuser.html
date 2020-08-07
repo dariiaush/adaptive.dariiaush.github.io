@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Новый пользователь</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="size">
+                <a href="./index.html" class="logo">Блог Пользователя</a>
+                <ul class="navigation">
+                        <li class="nav_item active_page"><a href="./add_newuser.html">Пользователи</a></li>
+                        <li class="nav_item"><a href="./news.html">Новости</a></li>
+                        <li class="nav_item"><a href="#">Настройки сайта</a></li>
+                </ul>
+                <div class="menu_mobile" onclick="document.getElementById('menumobile').style.display = 'block'">
+                </div>
+                <div class="menu_mobile_link" id="menumobile">
+                    <a href="#"class="active_page">Пользователи</a>
+                    <a href="./news.html">Новости</a>
+                    <a href="#">Настройки сайта</a>
+                    <a href="#" onclick="document.getElementById('menumobile').style.display = 'none'">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="size">
+                <div class="new_user">
+                    <h2>Новый пользователь</h2>
+                    <form action="">
+                        <input type="text" name="new_user_name" id="new_user_name" placeholder="Имя" autocomplete="off">
+                        <input type="text" name="new_user_patronymic" id="new_user_patronymic" placeholder="Отчество" autocomplete="off">
+                        <input type="password" name="new_user_password" id="new_user_password" placeholder="Пароль">
+                        <input type="text" name="new_user_secondname" id="new_user_secondname" placeholder="Фамилия" autocomplete="off">
+                        <input type="email" name="new_user_email" id="new_user_email" placeholder="Почта" placeholder="off">
+                        <input type="submit" value="Добавить" class="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="size">
+                <p>2020 Все права защищены</p>
+                <p>Разработчик: Ушарова Дарья</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

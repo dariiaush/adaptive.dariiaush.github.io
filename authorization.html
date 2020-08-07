@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Авторизация и Регистрация</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="size">
+                <a href="./index.html" class="logo">Блог Пользователя</a>
+                <ul class="navigation">
+                        <li class="nav_item"><a href="./index.html">Главная</a></li>
+                        <li class="nav_item"><a href="./article.html">Статьи</a></li>
+                        <li class="nav_item"><a href="./news.html">Новости</a></li>
+                        <li class="nav_item"><a href="#">Обо мне</a></li>
+                </ul>
+                <div class="menu_mobile" onclick="document.getElementById('menumobile').style.display = 'block'">
+                </div>
+                <div class="menu_mobile_link" id="menumobile">
+                    <a href="./index.html">Главная</a>
+                    <a href="./article.html">Статьи</a>
+                    <a href="./news.html">Новости</a>
+                    <a href="#">Обо мне</a>
+                    <a href="#" class="active_page">Авторизация и Регистрация</a>
+                    <a href="#" onclick="document.getElementById('menumobile').style.display = 'none'">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="size">
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="text" id="text" placeholder="Введите текст...">
+                        <input type="submit" value="Искать" class="send">
+                    </form>
+                </div>
+                <div class="authorization active_page"><a href="#">Авторизация и Регистрация</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="size">
+                <div class="autho">
+                    <h2>Авторизация</h2>
+                    <form action="">
+                        <input type="text" name="login" id="login" placeholder="Логин" autocomplete="off">
+                        <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="off">
+                        <input type="submit" value="Отправить" class="send">
+                    </form>
+                </div>
+                <div class="regist">
+                    <h2>Регистрация</h2>
+                    <form action="">
+                        <div class="form">
+                            <div class="left_form">
+                                <input type="text" name="login" id="login" placeholder="Логин" autocomplete="off">
+                                <input type="email" name="email" id="email" placeholder="Почта" autocomplete="off">
+                                <input type="password" name="password" id="password" placeholder="Пароль" autocomplete="off">
+                                <input type="text" name="number" id="number" placeholder="Номер телефона" autocomplete="off">
+                            </div>
+                            <div class="right_form">
+                                <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off">
+                                <input type="text" name="second_name" id="second_name" placeholder="Фамилия" autocomplete="off">
+                                <input type="password" name="confirm_password" id="confirm_password" placeholder="Подтвердите пароль" autocomplete="off">
+                                <input type="text" name="second_number" id="second_number" placeholder="Второй номер (необязательно)" autocomplete="off">
+                            </div>
+                        </div>
+                        <input type="submit" value="Отправить" class="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="size">
+                <p>2020 Все права защищены</p>
+                <p>Разработчик: Ушарова Дарья</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

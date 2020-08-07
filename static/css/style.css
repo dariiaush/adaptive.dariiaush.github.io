@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* input:focus,
+button:focus,
+textarea:focus{
+    outline-offset: 0;
+    outline: -webkit-focus-ring-color auto 0;
+} */
+
+.active_page {
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.size {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.header {
+    height: 80px;        
+    background-color: #3C4CAD;   
+    line-height: 80px;
+}
+
+.header .logo {
+    font-size: 20px;
+}
+
+.header .navigation {
+    display: flex;
+}
+
+.header .navigation .nav_item{
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.subheader .authorization a,
+.main .autho h2,
+.main .regist h2,
+.main .new_news h2,
+.main .new_user h2{
+    font-size: 16px;
+}
+
+.header .navigation .nav_item:last-child {
+    margin-right: 0;
+}
+
+.header a,
+.subheader a{
+    color: white;
+}
+
+.subheader {
+    height: 60px;
+    background-color: #5E72EB;
+    line-height: 60px;
+}
+
+.subheader .search input[type="text"] {
+    width: 250px;
+    padding: 0 10px;
+}
+
+.subheader .search .send,
+.main .column .news .foot .read,
+.main .column .news .comments .add_comment .send {
+    background-color: #56C596;
+    color: white;
+    width: 90px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.subheader .search input[type="text"],
+.subheader .search .send,
+.main .column .news .foot .read,
+.main .column .news .comments .add_comment .send {
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.main .column .news .comments .add_comment .send{
+    margin-left: 0px;
+}
+
+.menu_mobile {
+    display: none;
+    background: url(../img/menu.svg) no-repeat center center;
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+}
+
+.menu_mobile_link {
+    display: none;
+    background: #5e72eb;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu_mobile_link a {
+    display: block;
+    line-height: 30px;
+}
+
+.menu_mobile_link a:nth-last-child(2) {
+    line-height: 30px;
+}
+
+.main {
+    margin: 40px 0;
+}
+
+.main .column {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.main .column .news {
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.144);
+    padding: 20px;
+    width: calc(100% - 40px - 2px);
+    margin-bottom: 40px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.main .column .news .head,
+.main .column .news .foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .column .news .head a,
+.main .sidebar .section h2,
+.main .column .news .comments h2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main .column .news .head a,
+.main .column .news .foot .foot-count{
+    margin: auto 0;
+    color: #000000;
+}
+
+.main .column .news .foot span{
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.main .column .news .foot span:last-child{
+    padding-right: 0px;
+}
+
+.main .column .picture img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main .column .news .head a,
+.main .column .news .head p,
+.main .sidebar .section h2,
+.main .autho h2,
+.main .regist h2{
+    margin: 0;
+}
+
+.main .column .news .comments .comment img{
+    width: 35px;
+    height: 35px;
+    padding-top: 12px;
+}
+
+.main .column .news .comments .comment{
+    display: flex;
+}
+
+.main .sidebar{
+    width: 100%;
+    max-width: 270px;
+}
+
+.main .sidebar .section {
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.144);
+    padding: 20px;
+    width: calc(100% - 40px - 2px);
+    font-size: 16px;
+}
+
+.main .sidebar .section .sections{
+    margin-top: 14px;
+}
+
+.main .sidebar .section .sections .items a{
+    color: #000000;
+    margin-left: 14px;
+}
+
+.main .sidebar .section .sections .items .items2 a{
+    margin-left: 28px;
+}
+
+.header a:hover,
+.subheader a:hover,
+.subheader .search .send:hover,
+.main .column .news .foot .send:hover,
+.main .column .news .head a:hover,
+.main .column .news .comments .add_comment .send:hover,
+.main .sidebar .section .sections .items a:hover,
+.main .autho .send:hover,
+.main .regist .send:hover{
+    color: crimson;
+}
+
+.main .column .news .comments .add_comment textarea,
+.main .new_news textarea{
+    resize: none;
+    width: calc(100% - 22px);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.144);
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.main .autho h2,
+.main .regist h2,
+.main .new_news h2,
+.main .new_user h2{
+    margin-bottom: 30px;
+}
+
+.main .autho {
+    max-width: 330px;
+    width: 100%;
+    margin-right: 75px;
+}
+
+.main .regist{
+    max-width: 690px;
+    width: 100%;
+}
+
+.main .autho input,
+.main .regist input {
+    width: calc(100% - 22px);
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.144);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+}
+
+.main .autho .send,
+.main .regist .send{
+    width: 100%;
+    background-color: #56C596;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.main .regist .form {
+    display: flex;
+}
+
+.main .regist .form .left_form {
+    margin-right: 30px;
+}
+
+.main .new_news,
+.main .new_user {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main .new_news h2,
+.main .new_user h2{
+    padding-left: 20px;
+}
+
+.main .new_news .newsname,
+.main .new_news .news_footer{
+    display: flex;
+}
+
+.main .new_news form,
+.main .new_user form {
+    padding: 0 50px;
+}
+
+.main .new_news input,
+.main .new_user input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: calc(100% - 22px);
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.main .new_news input:first-child{
+    margin-right: 45px;
+}
+
+.main .new_news textarea {
+    box-shadow: none;
+    border: none;
+}
+
+.main .new_news .send,
+.main .new_user .send {
+    width: 100%;
+    background-color: #56C596;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main .new_user form {
+    column-count: 2;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #414141;
+    line-height: 100px;
+    color: white;
+    font-size: 16px;
+}
+
+footer p{
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header .size {
+        padding: 0;
+    }
+
+    .header a,
+    .header .menu_mobile{
+        padding: 0 5%;
+    }
+
+    .header .navigation {
+        display: none;
+    }
+
+    .subheader .search input[type="text"] {
+        width: 50%;
+    }
+
+    .subheader .authorization {
+        display: none;
+    }
+
+    .menu_mobile {
+        display: block;
+    }
+
+    .menu_mobile_link{
+        z-index: 2;
+        border-radius: 5px;
+        position: absolute;
+    }
+
+    .main .size {
+        display: block;
+    }
+
+    .main .column .news .foot span{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .main .sidebar {
+        max-width: 100%;
+    }
+
+    .main {
+        margin: 20px 0;
+    }
+
+    .main .autho h2,
+    .main .regist h2,
+    .main .new_news h2,
+    .main .new_user h2 {
+        margin-bottom: 20px;
+    }
+
+    .main .new_news h2,
+    .main .new_user h2{
+        margin-top: 0;
+    }
+
+    .main .new_news,
+    .main .new_user{
+        padding-top: 15px;
+    }
+
+    .main .regist h2{
+        margin-top: 20px;
+    }
+
+    .main .autho,
+    .main .regist .form .left_form {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .main .regist .form {
+        display: block;
+    }
+
+    .main .new_news form,
+    .main .new_user form {
+        padding: 0 20px;
+    }
+
+    .main .new_news .newsname,
+    .main .new_news .news_footer{
+        display: block;
+    }
+
+    .main .new_user form{
+        column-count: 1;
+    }
+
+    footer {
+        height: 40px;
+        font-size: 10px;
+        line-height: 40px;
+    }
+
+}

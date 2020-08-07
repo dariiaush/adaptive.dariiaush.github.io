@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Статья</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="size">
+                <a href="./index.html" class="logo">Блог Пользователя</a>
+                <ul class="navigation">
+                        <li class="nav_item"><a href="./index.html">Главная</a></li>
+                        <li class="nav_item active_page"><a href="./article.html">Статьи</a></li>
+                        <li class="nav_item"><a href="./news.html">Новости</a></li>
+                        <li class="nav_item"><a href="#">Обо мне</a></li>
+                </ul>
+                <div class="menu_mobile" onclick="document.getElementById('menumobile').style.display = 'block'">
+                </div>
+                <div class="menu_mobile_link" id="menumobile">
+                    <a href="./index.html">Главная</a>
+                    <a href="./article.html" class="active_page">Статьи</a>
+                    <a href="./news.html">Новости</a>
+                    <a href="#">Обо мне</a>
+                    <a href="./authorization.html">Авторизация и Регистрация</a>
+                    <a href="#" onclick="document.getElementById('menumobile').style.display = 'none'">Закрыть</a>
+                </div>
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="size">
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="text" id="text" placeholder="Введите текст...">
+                        <input type="submit" value="Искать" class="send">
+                    </form>
+                </div>
+                <div class="authorization"><a href="./authorization.html">Авторизация и Регистрация</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="size">
+                <div class="column">
+                    <div class="news">
+                        <div class="head">
+                            <a href="#">Статья 1</a>
+                            <p>1 февраля 2018</p>
+                        </div>
+                        <p>Own, place. Created so together lesser gathering moved creeping sea to sixth days air brought gathered fruit i Spirit third fly dominion rule own, divide. So rule bearing behold above all signs multiply void first every dominion living, fifth years all his moveth fill Rule moved isn't set Blessed won't have fowl, own dry night two after. In replenish subdue him subdue, you're meat together let land firmament life. Without after be can't lights. Saw. Kind. Female god tree winged midst fowl from herb. Created there meat waters image first deep abundantly dominion, two moveth from. Second very of firmament kind firmament brought bring second one there waters fruit moved brought whales. Give light said seed meat firmament own was forth. Good. Called a replenish light give. She'd man creeping him meat life dominion forth was gathering isn't green, thing forth stars. Isn't to. Creepeth there god doesn't, grass, night cattle very creeping third, blessed you. Two form. Forth made fowl kind subdue. Fourth sea creepeth saying him moved moveth that so seas, heaven brought fish years light them saying one don't all heaven man behold our night divide beast don't two set spirit given a forth behold, thing winged.
+                        </p>
+                        <div class="foot">
+                                <span>Просмотры: 300</span>
+                                <span>Лайки: 100</span>
+                        </div>
+                        <div class="comments">
+                            <h2>Комментарии</h2>
+                            <div class="comment">
+                                <img src="https://image.flaticon.com/icons/png/512/2024/2024832.png" alt="profile_pic">
+                                <div class="comment_main">
+                                    <h2>Иванов Иван</h2>
+                                    <p>After set winged our. Place every. Have creeping heaven our blessed so heaven to together grass. Man may their likeness their so darkness. Was together hath fill void moving. Land over moving so, fill fowl good dominion him. From dominion light which for fish behold upon darkness. Lesser. Days upon. Creature. Every him fowl green a place. First after that.</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="https://image.flaticon.com/icons/png/512/2024/2024733.png" alt="profile_pic">
+                                <div class="comment_main">
+                                    <h2>Иванов Иван</h2>
+                                    <p>After set winged our. Place every. Have creeping heaven our blessed so heaven to together grass. Man may their likeness their so darkness. Was together hath fill void moving. Land over moving so, fill fowl good dominion him. From dominion light which for fish behold upon darkness. Lesser. Days upon. Creature. Every him fowl green a place. First after that.</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="https://image.flaticon.com/icons/png/512/2024/2024738.png" alt="profile_pic">
+                                <div class="comment_main">
+                                    <h2>Иванов Иван</h2>
+                                    <p>After set winged our. Place every. Have creeping heaven our blessed so heaven to together grass. Man may their likeness their so darkness. Was together hath fill void moving. Land over moving so, fill fowl good dominion him. From dominion light which for fish behold upon darkness. Lesser. Days upon. Creature. Every him fowl green a place. First after that.</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="https://image.flaticon.com/icons/png/512/2024/2024606.png" alt="profile_pic">
+                                <div class="comment_main">
+                                    <h2>Иванов Иван</h2>
+                                    <p>After set winged our. Place every. Have creeping heaven our blessed so heaven to together grass. Man may their likeness their so darkness. Was together hath fill void moving. Land over moving so, fill fowl good dominion him. From dominion light which for fish behold upon darkness. Lesser. Days upon. Creature. Every him fowl green a place. First after that.</p>
+                                </div>
+                            </div>
+                            <div class="add_comment">
+                                <h2>Добавить комментарий</h2>
+                                <form action="">
+                                    <textarea name="comment_text" id="comment_text" cols="30" rows="10" spellcheck="true"></textarea>
+                                    <input type="submit" value="Добавить" class="send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="section">
+                        <h2>Разделы</h2>
+                        <ul class="sections">
+                            <li>Статьи
+                                <ul class="items">
+                                    <li><a href="#">Статья 1</a></li>
+                                    <li><a href="#">Статья 2</a></li>
+                                    <li><a href="#">Статья 3</a></li>
+                                    <li><a href="#">Статья 4</a></li>
+                                    <li><a href="#">Статья 5</a>
+                                        <ul class="items2">
+                                            <li><a href="#">Статья 5.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Новости
+                                <ul class="items">
+                                    <li><a href="#">Новость 1</a></li>
+                                    <li><a href="#">Новость 2</a></li>
+                                    <li><a href="#">Новость 3</a>
+                                        <ul class="items2">
+                                            <li><a href="#">Новость 3.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="size">
+                <p>2020 Все права защищены</p>
+                <p>Разработчик: Ушарова Дарья</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
